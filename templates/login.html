@@ -10,6 +10,9 @@
 <center>
 
     <h2>Login</h2>
+    {% if error %}
+    <p style="color:red;">{{ error }}</p>
+    {% endif %}
 
     <form method="post" action="{{ url_for('login') }}">
         <table border="1" cellpadding="10">

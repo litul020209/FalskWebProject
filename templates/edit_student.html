@@ -3,37 +3,45 @@
 <head>
     <title>Edit Student</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/edit_student.css') }}">
-
 </head>
 <body>
-<center>
 
-    <h2>Edit Student</h2>
+<h2>Edit Student</h2>
 
-    <form method="post" action="{{ url_for('edit_student', id=student[0]) }}">
-        <table border="1" cellpadding="10">
-            <tr>
-                <td>Name</td>
-                <td><input type="text" name="name" value="{{ student[1] }}" required></td>
-            </tr>
-            <tr>
-                <td>Age</td>
-                <td><input type="number" name="age" value="{{ student[2] }}" required></td>
-            </tr>
-            <tr>
-                <td>Course</td>
-                <td><input type="text" name="course" value="{{ student[3] }}" required></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <input type="submit" value="Update">
-                    <a href="{{ url_for('data') }}">Cancel</a>
-                </td>
-            </tr>
-        </table>
-    </form>
+<form method="post" action="{{ url_for('edit_student', id=student['id']) }}">
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>Name</td>
+            <td>
+                <input type="text" name="name" value="{{ student['name'] }}" required>
+            </td>
+        </tr>
 
-</center>
+        <tr>
+            <td>Age</td>
+            <td>
+                <input type="number" name="age" value="{{ student['age'] }}" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Course</td>
+            <td>
+                <input type="text" name="course" value="{{ student['course'] }}" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Update">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<br>
+<a href="{{ url_for('data') }}">Back</a>
+
 </body>
 </html>
