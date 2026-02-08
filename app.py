@@ -5,10 +5,10 @@ app = Flask(__name__)
 app.secret_key = "mysecretkey"
 
 con = mysql.connect(
-    host="localhost",
-    user="root",
-    password="Biswal@123",
-    database="sample_fp10"
+    host="sql3.freesqldatabase.com",
+    user="sql3816537",
+    password="564d2rpRvh",
+    database="sql3816537"
 )
 
 cur = con.cursor()
