@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+</head>
+<body>
+    <div class="container">
+
+        <header class="nav">
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Register</a>
+            <a href="{{ url_for('data') }}">Data</a>
+        </header>
+
+        <hr>
+
+        <h1>Welcome to the Student Management System</h1>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+/* ===== COMMON BASE STYLE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+}
+
+center {
+    margin-top: 60px;
+}
+
+h2, h3 {
+    color: #1976d2;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+center {
+    margin-top: 70px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 200px;
+    padding: 6px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    background-color: #888;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.85;
+}
+
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #9e9e9e;
+    color: white;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.85;
+}
